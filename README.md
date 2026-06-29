@@ -1,3 +1,10 @@
+<p align="center">
+
+  <img src="image/logo.png" alt="DDNS-Go for pfSense" width="300">
+
+</p>
+
+
 # DDNS-Go for pfSense
 
 ![pfSense CE](https://img.shields.io/badge/pfSense_CE-blue)
