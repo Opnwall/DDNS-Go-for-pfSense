@@ -1,6 +1,8 @@
 # DDNS-Go for pfSense
 
-这是一个用于 pfSense 的 DDNS-Go 集成包，提供 WebGUI 菜单、服务管理、开机自启和标准 `pkg` 打包支持。
+![pfSense CE](https://img.shields.io/badge/pfSense_CE-blue)
+![pfSense Plus](https://img.shields.io/badge/pfSense_Plus-green)
+这是一个用于 pfSense 的 DDNS-Go 集成包，提供 WebGUI 菜单、服务管理、开机自启和标准 `pkg` 打包支持。在pfSense CE 2.8.1上测试通过。
 
 ## 项目结构
 
@@ -17,7 +19,7 @@
 请在 FreeBSD 或 pfSense 主机上编译：
 
 ```sh
-make package
+./build.sh
 ```
 
 默认生成通用 amd64 ABI 包：`FreeBSD:*:amd64`，可用于 pfSense CE 和 pfSense Plus 的 amd64 系统。
@@ -30,7 +32,7 @@ make package
 ## 安装
 
 ```sh
-./install.sh
+pkg add pfSense-pkg-ddns-go.pkg
 ```
 
 安装完成后，刷新 pfSense WebGUI，进入 `服务 > DDNS-Go`。
@@ -42,12 +44,10 @@ make package
 - 首次安装默认账号：`admin`
 - 首次安装默认密码：`admin`
 
-如果目标系统已经存在 `/usr/local/etc/ddns-go/config.yaml`，安装脚本不会覆盖已有配置。
-
 ## 卸载
 
 ```sh
-./uninstall.sh
+pkg delete pfSense-pkg-ddns-go
 ```
 
 卸载时会停止服务，并清理以下文件：
@@ -58,12 +58,6 @@ make package
 - `/usr/local/etc/ddns-go`
 - `/usr/local/share/pfSense/menu/pfSense-Services_ddnsgo.xml`
 
-## WebGUI
+## 免责声明
 
-WebGUI 页面提供：
-
-- 服务状态显示
-- 启动、停止、重启控制
-- 访问地址显示
-- 配置文件在线编辑
-- 运行日志查看
+这是一个非官方社区项目，不受 pfSense 团队支持，自行承担使用过程中可能产生的风险。
