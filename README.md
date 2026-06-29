@@ -3,11 +3,7 @@
 ![pfSense CE](https://img.shields.io/badge/pfSense_CE-blue)
 ![pfSense Plus](https://img.shields.io/badge/pfSense_Plus-green)
 
-DDNS-GO 是一款开源、轻量级的动态域名解析工具，可自动将公网 IPv4/IPv6 地址同步到多个 DNS 服务商，实现动态 IP 的域名自动更新。
-
-这是一个用于 pfSense 的 DDNS-Go 集成包，提供 WebGUI 菜单、服务管理、开机自启和标准 `pkg` 打包支持。
-
-在pfSense CE 2.8.1上测试通过。
+DDNS-GO 是一款开源、轻量级的动态域名解析工具，可自动将公网 IPv4/IPv6 地址同步到多个 DNS 服务商，实现动态 IP 的域名自动更新。这是一个用于 pfSense 的 DDNS-Go 集成包，提供 WebGUI 菜单、服务管理、开机自启和标准 `pkg` 打包支持。在pfSense CE 2.8.1上测试通过。
 
 ## 项目结构
 
