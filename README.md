@@ -5,7 +5,7 @@
 
 DDNS-GO 是一款开源、轻量级的动态域名解析工具，可自动将公网 IPv4/IPv6 地址同步到多个 DNS 服务商，实现动态 IP 的域名自动更新。这是一个用于 pfSense 的 DDNS-Go 集成包，提供 WebGUI 菜单、服务管理、开机自启和标准 `pkg` 打包支持。在pfSense CE 2.8.1上测试通过。
 
-## 项目结构
+## 结构
 
 - `src/` 按 pfSense 实际安装路径组织文件。
 - `src/usr/local/bin/ddns-go` 是本地内置的 FreeBSD amd64 二进制文件。
@@ -59,6 +59,6 @@ pkg delete pfSense-pkg-ddns-go
 - `/usr/local/etc/ddns-go`
 - `/usr/local/share/pfSense/menu/pfSense-Services_ddnsgo.xml`
 
-## 免责声明
+## 免责
 
 这是一个非官方社区项目，不受 pfSense 团队支持，自行承担使用过程中可能产生的风险。
